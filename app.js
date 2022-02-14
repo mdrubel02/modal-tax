@@ -58,6 +58,14 @@ function totalCalculate(){
     const prevousTotal=calculateSubTotal();
     const subTotal=document.getElementById('sub-total');
     subTotal.innerText=prevousTotal;
+    const tax=prevousTotal * .2;
+    document.getElementById('tax').innerText=tax;
+    const finalTotal=document.getElementById('grand-total');
+    const finalTotalText=finalTotal.innerText;
+    finalTotal.innerText=tax + prevousTotal;
+    const grantTotal=document.getElementById('grand-total-2');
+    
+
 }
 
 function calculateSubTotal(){
