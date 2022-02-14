@@ -50,8 +50,15 @@ addButton.addEventListener('click',function(){
 
     //add by html tag er shte create tag
     tableInfo.appendChild(tableRow);
-    calculateSubTotal();
+    totalCalculate();
 })
+
+
+function totalCalculate(){
+    const prevousTotal=calculateSubTotal();
+    const subTotal=document.getElementById('sub-total');
+    subTotal.innerText=prevousTotal;
+}
 
 function calculateSubTotal(){
     let subTotal=0
