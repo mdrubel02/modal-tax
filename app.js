@@ -64,7 +64,7 @@ function totalCalculate(){
     const finalTotalText=finalTotal.innerText;
     finalTotal.innerText=tax + prevousTotal;
     const grantTotal=document.getElementById('grand-total-2');
-    
+    grantTotal.innerText=tax + prevousTotal;
 
 }
 
